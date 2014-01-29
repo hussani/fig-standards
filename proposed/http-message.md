@@ -88,7 +88,7 @@ an underlying implementation MAY mimic the following behavior.
 
 ```php
 $str = $message->getUrl() . ' ' . $path . ' HTTP/'
-    . $message->getProtocolVersion()) . "\r\n\r\n";
+    . $message->getProtocolVersion() . "\r\n\r\n";
 
 foreach ($message->getHeaders() as $key => $value) {
     // Custom handling MAY be applied for specific keys
